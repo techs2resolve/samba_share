@@ -12,7 +12,7 @@ print(folder_location)
 
 print("Making change is SMB config file please wait:- ")
 
-f = open('/Users/sarfaraz/smb.conf','a')   # change the file location to /etc/samba/smb.conf
+f = open('/etc/samba/smb.conf','a')   # change the file location to /etc/samba/smb.conf
 f.write('\n' + '[' + folder_name + ']')
 f.write('\n' + '\t' +'comment = '+ folder_name)
 f.write('\n' + '\t' +'path = '+ folder_location)
@@ -25,7 +25,7 @@ f.write('\n')
 f.close()
 
 # Reading file from here
-f = open('/Users/sarfaraz/smb.conf','r')
+f = open('/etc/samba/smb.conf','r')
 message = f.read()
 print(message)
 f.close()
