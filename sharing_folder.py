@@ -42,7 +42,7 @@ else:
 
 #################
 print("Restarting the Samba service")
-smb_service = "sudo service smbd"
+smb_service = "sudo service smbd restart"
 os.system(smb_service)
 
 
